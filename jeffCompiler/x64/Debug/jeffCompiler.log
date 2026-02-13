@@ -1,1 +1,5 @@
-﻿  jeffCompiler.vcxproj -> D:\applications\jeffCompiler\x64\Debug\jeffCompiler.exe
+﻿  jeffCompiler.cpp
+  jeffLexer.cpp
+  jeffParser.cpp
+  Generating Code...
+  jeffCompiler.vcxproj -> D:\nonsense\applications\jeffCompiler\x64\Debug\jeffCompiler.exe

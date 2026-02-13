@@ -1,3 +1,6 @@
-D:\applications\jeffCompiler\jeffCompiler.cpp;D:\applications\jeffCompiler\jeffCompiler\x64\Debug\jeffCompiler.obj
-D:\applications\jeffCompiler\jeffIO.cpp;D:\applications\jeffCompiler\jeffCompiler\x64\Debug\jeffIO.obj
-D:\applications\jeffCompiler\jeffLexer.cpp;D:\applications\jeffCompiler\jeffCompiler\x64\Debug\jeffLexer.obj
+D:\nonsense\applications\jeffCompiler\jeffCodeGenerator.cpp;D:\nonsense\applications\jeffCompiler\jeffCompiler\x64\Debug\jeffCodeGenerator.obj
+D:\nonsense\applications\jeffCompiler\jeffCompiler.cpp;D:\nonsense\applications\jeffCompiler\jeffCompiler\x64\Debug\jeffCompiler.obj
+D:\nonsense\applications\jeffCompiler\jeffIO.cpp;D:\nonsense\applications\jeffCompiler\jeffCompiler\x64\Debug\jeffIO.obj
+D:\nonsense\applications\jeffCompiler\jeffLexer.cpp;D:\nonsense\applications\jeffCompiler\jeffCompiler\x64\Debug\jeffLexer.obj
+D:\nonsense\applications\jeffCompiler\jeffParser.cpp;D:\nonsense\applications\jeffCompiler\jeffCompiler\x64\Debug\jeffParser.obj
+D:\nonsense\applications\jeffCompiler\jeffPreprocessor.cpp;D:\nonsense\applications\jeffCompiler\jeffCompiler\x64\Debug\jeffPreprocessor.obj

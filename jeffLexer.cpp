@@ -20,184 +20,52 @@ std::vector<jeffLexer::jeffToken> jeffLexer::lexify(std::string inputText)
 
 		// determine token at readIndex
 		jeffToken curToken;
-		if (!getCharToken(inputText[readIndex], curToken))
+		if (!getMultiSymToken(inputText, readIndex, curToken))
 		{
-			if (!getMultiSymToken(inputText, readIndex, curToken))
+			if (!getStringToken(inputText, readIndex, curToken))
 			{
-				if (!getStringToken(inputText, readIndex, curToken))
-				{
-					curToken.type = ILLEGAL;
-				}
+				curToken.type = ILLEGAL;
 			}
 		}
 
 		tokens.emplace_back(curToken);
 	}
+
+	jeffToken end;
+	end.type = EndF;
+	tokens.emplace_back(end);
 	return tokens;
 }
 
-// assigns type to current token and returns true if it is a single character, otherwise returns false
-bool jeffLexer::getCharToken(char curChar, jeffLexer::jeffToken& curToken)
-{
-	switch (curChar)
-	{
-	case '(':
-		curToken.type = LPAR;
-		break;
-	case ')':
-		curToken.type = RPAR;
-		break;
-	case '{':
-		curToken.type = LBRACE;
-		break;
-	case '}':
-		curToken.type = RBRACE;
-		break;
-	case '[':
-		curToken.type = LBRACKET;
-		break;
-	case ']':
-		curToken.type = RBRACKET;
-		break;
-	case '\\':
-		curToken.type = BSLASH;
-		break;
-	case ';':
-		curToken.type = SEMICOLON;
-		break;
-	case ',':
-		curToken.type = COMMA;
-		break;
-	case '.':
-		curToken.type = DOT;
-		break;
-	case '?':
-		curToken.type = QMARK;
-		break;
-	case '^':
-		curToken.type = CARAT;
-		break;
-	case '%':
-		curToken.type = PERCENT;
-		break;
-	case '|':
-		curToken.type = PIPE;
-		break;
-	case '&':
-		curToken.type = AMPERSAND;
-		break;
-	default:
-		return false;
-	}
-	return true;
-}
-
-// assigns type to current token and returns true if it is multiple symbols (i.e., not characters or digits), otherwise returns false
+// assigns type to current token and returns true if string of symbolic characters, otherwise returns false
 bool jeffLexer::getMultiSymToken(std::string inputText, int& readIndex, jeffLexer::jeffToken& curToken)
 {
-	switch (inputText[readIndex])
+	int originalIndex = readIndex;
+
+	std::string stringToken;
+	for (; !std::isalnum(inputText[readIndex]) && !std::isspace(inputText[readIndex]) && readIndex < inputText.size(); readIndex++)
 	{
-	case '!':
-		if (inputText[readIndex + 1] == '=')
-		{
-			curToken.type = NEQUAL;
-			readIndex++;
-		}
-		else
-			curToken.type = EXMARK;
-		break;
-	case ':':
-		if (inputText[readIndex + 1] == '=')
-		{
-			curToken.type = ASSIGN;
-			readIndex++;
-		}
-		else
-			curToken.type = COLON;
-		break;
-	case '=':
-		if (inputText[readIndex + 1] == '=')
-		{
-			curToken.type = EQUAL;
-			readIndex++;
-		}
-		else
-			curToken.type = ILLEGAL;
-		break;
-	case '+':
-		if (inputText[readIndex + 1] == '=')
-		{
-			curToken.type = ASSIGNADD;
-			readIndex++;
-		}
-		else if (inputText[readIndex + 1] == '+')
-		{
-			curToken.type = INCREMENT;
-			readIndex++;
-		}
-		else
-			curToken.type = PLUS;
-		break;
-	case '-':
-		if (inputText[readIndex + 1] == '=')
-		{
-			curToken.type = ASSIGNSUB;
-			readIndex++;
-		}
-		else if (inputText[readIndex + 1] == '-')
-		{
-			curToken.type = DECREMENT;
-			readIndex++;
-		}
-		else
-			curToken.type = MINUS;
-		break;
-	case '*':
-		if (inputText[readIndex + 1] == '=')
-		{
-			curToken.type = ASSIGNMUL;
-			readIndex++;
-		}
-		else
-			curToken.type = ASTERISK;
-		break;
-	case '/':
-		if (inputText[readIndex + 1] == '=')
-		{
-			curToken.type = ASSIGNDIV;
-			readIndex++;
-		}
-		else
-			curToken.type = FSLASH;
-		break;
-	case '<':
-		if (inputText[readIndex + 1] == '=')
-		{
-			curToken.type = LESSEQ;
-			readIndex++;
-		}
-		else
-			curToken.type = LESS;
-		break;
-	case '>':
-		if (inputText[readIndex + 1] == '=')
-		{
-			curToken.type = GREATEREQ;
-			readIndex++;
-		}
-		else
-			curToken.type = GREATER;
-		break;
-	default:
-		return false;
+		stringToken.push_back(inputText[readIndex]);
 	}
-	return true;
+	readIndex--;
+
+	while (!stringToken.empty())
+	{
+		if (multicharDictionary.find(stringToken) != multicharDictionary.end())
+		{
+			curToken.type = multicharDictionary[stringToken];
+			return true;
+		}
+		stringToken.pop_back();
+		readIndex--;
+	} 
+
+	readIndex = originalIndex;
+	return false;
 }
 
-// assigns type to current token and returns true if it is an alphanumeric token, otherwise returns false
-bool jeffLexer::getStringToken(std::string inputText, int& readIndex, jeffLexer::jeffToken& curToken)
+bool jeffLexer::handleCharStringLiteral(std::string inputText, int& readIndex, jeffLexer::jeffToken& curToken)
 {
-	// handle char/string literals
 	// TODO: handle error if unclosed quote
 	if (inputText[readIndex] == '\'')
 	{
@@ -219,28 +87,89 @@ bool jeffLexer::getStringToken(std::string inputText, int& readIndex, jeffLexer:
 		}
 		return true;
 	}
-
-	// identifiers must start with a letter, but can contain numbers after
-	if (!std::isalpha(inputText[readIndex]))
-		return false;
-
-	std::string tokenName;
-	for (; std::isalnum(inputText[readIndex]) || inputText[readIndex] == '_'; readIndex++)
-	{
-		tokenName.push_back(inputText[readIndex]);
-	}
-	readIndex--;
-
-	// keywords
-	if (dictionary.find(tokenName) != dictionary.end())
-	{
-		curToken.type = dictionary[tokenName];
-	}
-	// other identifiers
 	else
 	{
-		curToken.type = ID;
-		curToken.lexeme = tokenName;
+		int originalIndex = readIndex;
+
+		std::string stringToken;
+		for (; std::isalpha(inputText[readIndex]); readIndex++)
+		{
+			stringToken.push_back(inputText[readIndex]);
+		}
+		readIndex--;
+
+		if (stringToken == TRUTH || stringToken == UNTRUTH)
+		{
+			curToken.type = BOOLLITERAL;
+			curToken.lexeme = stringToken;
+			return true;
+		}
+
+		readIndex = originalIndex;
 	}
-	return true;
+	return false;
+}
+
+bool jeffLexer::handleIdentifier(std::string inputText, int& readIndex, jeffLexer::jeffToken& curToken)
+{
+	std::string stringToken;
+	if (std::isalpha(inputText[readIndex]))
+	{
+		for (; std::isalnum(inputText[readIndex]) || inputText[readIndex] == '_'; readIndex++)
+		{
+			stringToken.push_back(inputText[readIndex]);
+		}
+		readIndex--;
+
+		// keywords
+		if (keywordDictionary.find(stringToken) != keywordDictionary.end())
+		{
+			curToken.type = keywordDictionary[stringToken];
+		}
+		// other identifiers
+		else
+		{
+			curToken.type = ID;
+			curToken.lexeme = stringToken;
+		}
+		return true;
+	}
+	return false;
+}
+
+bool jeffLexer::handleNumberLiteral(std::string inputText, int& readIndex, jeffLexer::jeffToken& curToken)
+{
+	std::string stringToken;
+	if (std::isdigit(inputText[readIndex]))
+	{
+		// supports hexadecimal, octal, and binary
+		for (; std::isdigit(inputText[readIndex]) || inputText[readIndex] == '.' || inputText[readIndex] == 'f' || inputText[readIndex] == 'd' || inputText[readIndex] == 'x' || inputText[readIndex] == 'b'; readIndex++)
+		{
+			stringToken.push_back(inputText[readIndex]);
+		}
+		readIndex--;
+
+		if (stringToken.find('f') != std::string::npos)
+			curToken.type = FLOATLITERAL;
+		else if (stringToken.find('d') != std::string::npos)
+			curToken.type = DOUBLELITERAL;
+		else if (stringToken.find('.') == std::string::npos)
+			curToken.type = INTLITERAL;
+		curToken.lexeme = stringToken;
+		return true;
+	}
+	return false;
+}
+
+// assigns type to current token and returns true if it is an alphanumeric token, otherwise returns false
+bool jeffLexer::getStringToken(std::string inputText, int& readIndex, jeffLexer::jeffToken& curToken)
+{
+	if (handleCharStringLiteral(inputText, readIndex, curToken))
+		return true;
+	else if (handleIdentifier(inputText, readIndex, curToken))
+		return true;
+	else if (handleNumberLiteral(inputText, readIndex, curToken))
+		return true;
+
+	return false;
 }

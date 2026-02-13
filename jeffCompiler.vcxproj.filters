@@ -24,12 +24,30 @@
     <ClCompile Include="jeffIO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="jeffPreprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jeffParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jeffCodeGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="jeffLexer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="jeffIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jeffPreprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jeffParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jeffCodeGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,9 +1,9 @@
 
 #include <iostream>
 #include "jeffIO.h"
-#include "jeffLexer.h"
+#include "jeffParser.h"
 
-int main()
+int main(int argc, char* argv[])
 {
     jeffIO jefio;
     std::string test = jefio.readFile("test.txt");

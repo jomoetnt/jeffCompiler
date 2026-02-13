@@ -1,25 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\applications\\jeffCompiler\\",
+  "WorkspaceRootPath": "D:\\nonsense\\applications\\jeffCompiler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\applications\\jeffCompiler\\jeffCompiler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|solutionrelative:jeffCompiler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\nonsense\\applications\\jeffCompiler\\jeffParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|solutionrelative:jeffParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\applications\\jeffCompiler\\jeffLexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|solutionrelative:jeffLexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\applications\\jeffCompiler\\jeffLexer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\nonsense\\applications\\jeffCompiler\\jeffLexer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|solutionrelative:jeffLexer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\applications\\jeffCompiler\\jeffIO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\nonsense\\applications\\jeffCompiler\\jeffCompiler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|solutionrelative:jeffCompiler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\nonsense\\applications\\jeffCompiler\\jeffLexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|solutionrelative:jeffLexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\nonsense\\applications\\jeffCompiler\\jeffParser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|solutionrelative:jeffParser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\nonsense\\applications\\jeffCompiler\\jeffPreprocessor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|solutionrelative:jeffPreprocessor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\nonsense\\applications\\jeffCompiler\\jeffPreprocessor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|solutionrelative:jeffPreprocessor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\nonsense\\applications\\jeffCompiler\\jeffIO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|solutionrelative:jeffIO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\applications\\jeffCompiler\\jeffIO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|D:\\nonsense\\applications\\jeffCompiler\\jeffIO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{81E182E0-1D37-4056-B723-218FE19D17BD}|jeffCompiler.vcxproj|solutionrelative:jeffIO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -30,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,59 +58,115 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "jeffIO.cpp",
-              "DocumentMoniker": "D:\\applications\\jeffCompiler\\jeffIO.cpp",
-              "RelativeDocumentMoniker": "jeffIO.cpp",
-              "ToolTip": "D:\\applications\\jeffCompiler\\jeffIO.cpp",
-              "RelativeToolTip": "jeffIO.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "jeffParser.cpp",
+              "DocumentMoniker": "D:\\nonsense\\applications\\jeffCompiler\\jeffParser.cpp",
+              "RelativeDocumentMoniker": "jeffParser.cpp",
+              "ToolTip": "D:\\nonsense\\applications\\jeffCompiler\\jeffParser.cpp",
+              "RelativeToolTip": "jeffParser.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-15T00:34:36.577Z"
+              "WhenOpened": "2025-02-18T04:48:32.982Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "jeffIO.h",
-              "DocumentMoniker": "D:\\applications\\jeffCompiler\\jeffIO.h",
-              "RelativeDocumentMoniker": "jeffIO.h",
-              "ToolTip": "D:\\applications\\jeffCompiler\\jeffIO.h",
-              "RelativeToolTip": "jeffIO.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Title": "jeffParser.h",
+              "DocumentMoniker": "D:\\nonsense\\applications\\jeffCompiler\\jeffParser.h",
+              "RelativeDocumentMoniker": "jeffParser.h",
+              "ToolTip": "D:\\nonsense\\applications\\jeffCompiler\\jeffParser.h",
+              "RelativeToolTip": "jeffParser.h",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwCsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-15T00:33:37.881Z"
+              "WhenOpened": "2025-02-17T05:58:25.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "jeffPreprocessor.cpp",
+              "DocumentMoniker": "D:\\nonsense\\applications\\jeffCompiler\\jeffPreprocessor.cpp",
+              "RelativeDocumentMoniker": "jeffPreprocessor.cpp",
+              "ToolTip": "D:\\nonsense\\applications\\jeffCompiler\\jeffPreprocessor.cpp",
+              "RelativeToolTip": "jeffPreprocessor.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-17T05:26:42.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "jeffPreprocessor.h",
+              "DocumentMoniker": "D:\\nonsense\\applications\\jeffCompiler\\jeffPreprocessor.h",
+              "RelativeDocumentMoniker": "jeffPreprocessor.h",
+              "ToolTip": "D:\\nonsense\\applications\\jeffCompiler\\jeffPreprocessor.h",
+              "RelativeToolTip": "jeffPreprocessor.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-17T05:25:46.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "jeffIO.cpp",
+              "DocumentMoniker": "D:\\nonsense\\applications\\jeffCompiler\\jeffIO.cpp",
+              "RelativeDocumentMoniker": "jeffIO.cpp",
+              "ToolTip": "D:\\nonsense\\applications\\jeffCompiler\\jeffIO.cpp",
+              "RelativeToolTip": "jeffIO.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-15T00:34:36.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "jeffIO.h",
+              "DocumentMoniker": "D:\\nonsense\\applications\\jeffCompiler\\jeffIO.h",
+              "RelativeDocumentMoniker": "jeffIO.h",
+              "ToolTip": "D:\\nonsense\\applications\\jeffCompiler\\jeffIO.h",
+              "RelativeToolTip": "jeffIO.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-15T00:33:37.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "jeffLexer.cpp",
+              "DocumentMoniker": "D:\\nonsense\\applications\\jeffCompiler\\jeffLexer.cpp",
+              "RelativeDocumentMoniker": "jeffLexer.cpp",
+              "ToolTip": "D:\\nonsense\\applications\\jeffCompiler\\jeffLexer.cpp",
+              "RelativeToolTip": "jeffLexer.cpp",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-15T00:33:59.076Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "jeffLexer.cpp",
-              "DocumentMoniker": "D:\\applications\\jeffCompiler\\jeffLexer.cpp",
-              "RelativeDocumentMoniker": "jeffLexer.cpp",
-              "ToolTip": "D:\\applications\\jeffCompiler\\jeffLexer.cpp",
-              "RelativeToolTip": "jeffLexer.cpp",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAALkAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-15T00:33:59.076Z"
+              "Title": "jeffLexer.h",
+              "DocumentMoniker": "D:\\nonsense\\applications\\jeffCompiler\\jeffLexer.h",
+              "RelativeDocumentMoniker": "jeffLexer.h",
+              "ToolTip": "D:\\nonsense\\applications\\jeffCompiler\\jeffLexer.h",
+              "RelativeToolTip": "jeffLexer.h",
+              "ViewState": "AgIAACAAAAAAAAAAAADgvy8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-15T00:32:42.526Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "jeffLexer.h",
-              "DocumentMoniker": "D:\\applications\\jeffCompiler\\jeffLexer.h",
-              "RelativeDocumentMoniker": "jeffLexer.h",
-              "ToolTip": "D:\\applications\\jeffCompiler\\jeffLexer.h",
-              "RelativeToolTip": "jeffLexer.h",
-              "ViewState": "AgIAADcAAAAAAAAAAAAiwGsAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-15T00:32:42.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "jeffCompiler.cpp",
-              "DocumentMoniker": "D:\\applications\\jeffCompiler\\jeffCompiler.cpp",
+              "DocumentMoniker": "D:\\nonsense\\applications\\jeffCompiler\\jeffCompiler.cpp",
               "RelativeDocumentMoniker": "jeffCompiler.cpp",
-              "ToolTip": "D:\\applications\\jeffCompiler\\jeffCompiler.cpp",
+              "ToolTip": "D:\\nonsense\\applications\\jeffCompiler\\jeffCompiler.cpp",
               "RelativeToolTip": "jeffCompiler.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",

@@ -18,13 +18,16 @@ std::string jeffIO::readFile(std::string filename)
 	inputFile.open(filename.c_str(), std::ios::in);
 	assert(inputFile.is_open());
 
+	jeffPreprocessor jeffpre;
+
 	std::string line;
 	while (std::getline(inputFile, line))
 	{
-		fileText.append(line.append("\n"));
+		line = jeffpre.preprocessLine(line);
+		fileText.append(line);
 	}
 
 	inputFile.close();
 
-	return fileText;
+	return jeffpre.preprocess(fileText);
 }

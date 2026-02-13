@@ -1,19 +1,16 @@
-class jeffLexer
+// test comment
+
+/*
+other test comment
+*/
+
+bool jeff := ~true!
+uint16 jeff2 := 14!
+float32 jeff3 := 14.3f!
+float64 jeff5!
+float64 jeff4 := 26.8d!
+
+if ~jeff
 {
-public:
-	struct jeffToken
-	{
-		TOKENTYPE type;
-		std::string lexeme;
-	};
-
-	jeffLexer();
-
-	std::vector<jeffToken> lexify(std::string inputText);
-
-	bool getCharToken(char curChar, jeffToken& curToken);
-	bool getMultiSymToken(std::string inputText, int readIndex, jeffToken& curToken);
-	bool getStringToken(std::string inputText, int& readIndex, jeffToken& curToken);
-	
-	bool jeff := true;
-};
+	jeff5 := jeff4^2++!
+}

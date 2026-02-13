@@ -1,0 +1,9 @@
+Program -> DeclarationSection? + FunctionSection? + StatementSection
+DeclarationSection -> Declaration[]
+FunctionSection -> Function[]
+StatementSection -> Statement[]
+Declaration -> Type + Identifier + EOL
+Type -> Boolean | Integer | Float | Double | Character | String | Enum
+Integer -> SignedInteger | UnsignedInteger
+SignedInteger -> SINT8 | SINT16 | SINT32 | SINT64
+UnsignedInteger -> UINT8 | UINT16 | UINT32 | UINT64

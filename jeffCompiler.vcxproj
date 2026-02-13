@@ -130,13 +130,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="jeffCodeGenerator.cpp" />
     <ClCompile Include="jeffCompiler.cpp" />
     <ClCompile Include="jeffIO.cpp" />
     <ClCompile Include="jeffLexer.cpp" />
+    <ClCompile Include="jeffParser.cpp" />
+    <ClCompile Include="jeffPreprocessor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="jeffCodeGenerator.h" />
     <ClInclude Include="jeffIO.h" />
     <ClInclude Include="jeffLexer.h" />
+    <ClInclude Include="jeffParser.h" />
+    <ClInclude Include="jeffPreprocessor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
